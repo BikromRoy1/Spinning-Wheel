@@ -18,8 +18,8 @@ const letsSpin = () => {
   // Define a function to handle the transitionend event
   const handleTransitionEnd = () => {
     // alert(`Spinning has ended! ${getRandomNumber(1, 600)}`);
-    const resultText = ` ${getRandomNumber(1, 600)}`;
-    document.getElementById('resultText').textContent = resultText;
+    const resultText = ` ${getRandomNumber(20, 60)}`;
+    document.getElementById('resultText').textContent = resultText + "%";
 
     // Show the Bootstrap modal
     const resultModal = new bootstrap.Modal(
@@ -56,3 +56,4 @@ const letsSpin = () => {
     confettiSound.currentTime = 0; // Reset the audio to the beginning
   });
 };
+

@@ -6,14 +6,25 @@
 }
 body {
   font-family: sans-serif;
-
   overflow: hidden;
   /* background: #ffe605; */
   /* background: linear-gradient(to right, #800080, #ffc0cb); */
   background-image: linear-gradient(to right, #8bc34a 0%, #4caf50 100%);
+  /* background-image: url('https://img.freepik.com/free-photo/top-view-internet-communication-network-with-copy-space_23-2148779274.jpg?w=1380&t=st=1693903846~exp=1693904446~hmac=6979a0d9cf273a4cf13b838dacc79072e56c93af7973e95515d53623cee30e75'); */
   width: 100%;
   height: 100vh;
   background-size: cover;
+  /* background-position: center; */
+  position: relative;
+}
+body::before {
+  content: '';
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .spinner-container {
   display: flex;
@@ -31,7 +42,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  border: 10px solid #fff;
+  border: 10px solid #2347a733;
   border-radius: 50%;
   overflow: hidden;
   transition: all ease 4s;
@@ -93,12 +104,16 @@ body {
 span p {
   width: 65px;
   height: 65px;
-  font-size: 60px;
+  /* font-size: 60px; */
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+span p img {
+  width: 65px;
+  height: 65px;
 }
 .spin {
   position: absolute;
@@ -108,7 +123,7 @@ span p {
   height: 75px;
   border-radius: 50%;
   border: 2px solid #fff;
-  background-color: black;
+  background-color: #673ab7;
   color: #fff;
   box-shadow: 0 5px 20px #000;
   font-weight: bold;
@@ -175,13 +190,28 @@ span p {
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   font-weight: 700;
   color: #0d73f0;
 }
 .program-title h4 span {
   color: #ff0b5b;
 }
-.top-bar{
-  
+.top-bar {
+  /* height: 100px; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.top-bar .pnt-image {
+  width: 400px;
+  top: 100px;
+  left: 140px;
+  position: absolute;
+}
+.top-bar .wust-image {
+  width: 430px;
+  top: 100px;
+  position: absolute;
+  right: 140px;
 }

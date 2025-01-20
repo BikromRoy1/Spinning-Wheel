@@ -1,0 +1,170 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .top-bar .pnt-image {
+    width: 250px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .top-bar .wust-image {
+    width: 250px;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .wheel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 4s;
+  }
+  span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+  }
+  .span1 {
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #ff1f1f;
+    top: 68px;
+    left: 0;
+  }
+  .span2 {
+    clip-path: polygon(100% 98%, 0 50%, 100% 2%);
+    background-color: #19e3cf;
+    top: 72px;
+    right: 0;
+  }
+  .span3 {
+    clip-path: polygon(52% 0%, -4% 100%, 92% 100%);
+    background-color: #9e0bf3;
+    bottom: 0;
+    left: 63px;
+  }
+  .span4 {
+    clip-path: polygon(51% 100%, 93% 0, 8% 0);
+    background-color: #15b600;
+    top: 0;
+    left: 71px;
+  }
+  .span5 {
+    clip-path: polygon(0 37%, 100% 0%, 54% 100%);
+    background-color: #1f26ff;
+    bottom: -2px;
+    right: 147px;
+  }
+  .span6 {
+    clip-path: polygon(40% 106%, 0 0%, 100% 40%);
+    background-color: #ff5a5a;
+    bottom: -2px;
+    left: 136px;
+  }
+  .span7 {
+    clip-path: polygon(57% 0, 100% 100%, 0 60%);
+    background-color: #57fff1;
+    top: -2px;
+    right: 138px;
+  }
+  .span8 {
+    clip-path: polygon(0 100%, 108% 60%, 41% 0);
+    background-color: #ff9612;
+    top: -2px;
+    left: 142px;
+  }
+  span p {
+    width: 30px;
+    height: 30px;
+    /* font-size: 27px; */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  span p img {
+    width: 30px;
+    height: 30px;
+  }
+  .spin {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.09, 1.09, 1.09);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  .spin:active {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background: #ffe605;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .top-bar .pnt-image {
+    width: 400px;
+    top: 50px;
+    left: 62px;
+    position: absolute;
+  }
+  .top-bar .wust-image {
+    width: 400px;
+    top: 50px;
+    position: absolute;
+    right: 62px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .top-bar .pnt-image {
+    width: 400px;
+    top: 50px;
+    left: 62px;
+    position: absolute;
+  }
+  .top-bar .wust-image {
+    width: 400px;
+    top: 50px;
+    position: absolute;
+    right: 62px;
+  }
+}
